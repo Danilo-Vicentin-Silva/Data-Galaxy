@@ -4,7 +4,6 @@ import Filmes from "@/components/starwars/Filmes"
 import Personagens from "@/components/starwars/Personagens"
 import useStarWars from "@/data/hooks/useStarWars"
 import Head from "next/head"
-import { Analytics } from "@vercel/analytics/react"
 
 const Home = () => {
   const { processando, personagens, voltar, filmes, selecionarPersonagem } =
@@ -36,7 +35,6 @@ const Home = () => {
         <link rel="manifest" href="/favicon_io/manifest.json" />
       </Head>
       <div>
-        <Analytics />
         <div className="flex flex-col gap-5 justify-center items-center h-screen relative">
           <Background />
 
